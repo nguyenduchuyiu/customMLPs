@@ -1,0 +1,72 @@
+2024-11-16 03:36:40 - __main__.train_with_cifar10 - INFO - Logging setup complete. Logs will be saved to: logs/train_with_cifar10/training_20241116_033640.log
+2024-11-16 03:36:40 - __main__.train_with_cifar10 - INFO - === Training Configuration ===
+2024-11-16 03:36:40 - __main__.train_with_cifar10 - INFO - Experiment Name: train_with_cifar10
+2024-11-16 03:36:40 - __main__.train_with_cifar10 - INFO - Model Architecture:
+CustomMLP(
+  (flatten): Flatten(start_dim=1, end_dim=-1)
+  (layers): Sequential(
+    (0): Linear(in_features=3072, out_features=1024, bias=True)
+    (1): ReLU()
+    (2): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (3): Dropout(p=0.3, inplace=False)
+    (4): Linear(in_features=1024, out_features=512, bias=True)
+    (5): ReLU()
+    (6): BatchNorm1d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (7): Dropout(p=0.3, inplace=False)
+    (8): Linear(in_features=512, out_features=256, bias=True)
+    (9): ReLU()
+    (10): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (11): Dropout(p=0.3, inplace=False)
+    (12): Linear(in_features=256, out_features=10, bias=True)
+  )
+)
+2024-11-16 03:36:40 - __main__.train_with_cifar10 - INFO - Optimizer: Adam
+2024-11-16 03:36:40 - __main__.train_with_cifar10 - INFO - Learning Rate: 0.001
+2024-11-16 03:36:40 - __main__.train_with_cifar10 - INFO - Batch Size: 256
+2024-11-16 03:36:40 - __main__.train_with_cifar10 - INFO - Epochs: 10
+2024-11-16 03:36:40 - __main__.train_with_cifar10 - INFO - Device: cuda
+2024-11-16 03:36:42 - __main__.train_with_cifar10 - INFO - 
+Epoch 1/10
+2024-11-16 03:37:01 - __main__.train_with_cifar10 - INFO - Train Loss: 1.7259, Train Acc: 38.15%
+Val Loss: 1.4961, Val Acc: 46.43%
+2024-11-16 03:37:01 - __main__.train_with_cifar10 - INFO - 
+Epoch 2/10
+2024-11-16 03:37:19 - __main__.train_with_cifar10 - INFO - Train Loss: 1.4956, Train Acc: 46.49%
+Val Loss: 1.4053, Val Acc: 49.85%
+2024-11-16 03:37:19 - __main__.train_with_cifar10 - INFO - 
+Epoch 3/10
+2024-11-16 03:37:38 - __main__.train_with_cifar10 - INFO - Train Loss: 1.4057, Train Acc: 49.77%
+Val Loss: 1.3479, Val Acc: 52.40%
+2024-11-16 03:37:38 - __main__.train_with_cifar10 - INFO - 
+Epoch 4/10
+2024-11-16 03:37:59 - __main__.train_with_cifar10 - INFO - Train Loss: 1.3392, Train Acc: 52.08%
+Val Loss: 1.3119, Val Acc: 53.08%
+2024-11-16 03:37:59 - __main__.train_with_cifar10 - INFO - 
+Epoch 5/10
+2024-11-16 03:38:20 - __main__.train_with_cifar10 - INFO - Train Loss: 1.2845, Train Acc: 54.10%
+Val Loss: 1.2970, Val Acc: 53.87%
+2024-11-16 03:38:20 - __main__.train_with_cifar10 - INFO - 
+Epoch 6/10
+2024-11-16 03:38:39 - __main__.train_with_cifar10 - INFO - Train Loss: 1.2473, Train Acc: 55.31%
+Val Loss: 1.2800, Val Acc: 54.32%
+2024-11-16 03:38:39 - __main__.train_with_cifar10 - INFO - 
+Epoch 7/10
+2024-11-16 03:38:58 - __main__.train_with_cifar10 - INFO - Train Loss: 1.1986, Train Acc: 57.32%
+Val Loss: 1.2735, Val Acc: 54.80%
+2024-11-16 03:38:58 - __main__.train_with_cifar10 - INFO - 
+Epoch 8/10
+2024-11-16 03:39:17 - __main__.train_with_cifar10 - INFO - Train Loss: 1.1658, Train Acc: 58.48%
+Val Loss: 1.2647, Val Acc: 54.91%
+2024-11-16 03:39:17 - __main__.train_with_cifar10 - INFO - 
+Epoch 9/10
+2024-11-16 03:39:37 - __main__.train_with_cifar10 - INFO - Train Loss: 1.1375, Train Acc: 59.61%
+Val Loss: 1.2364, Val Acc: 56.16%
+2024-11-16 03:39:37 - __main__.train_with_cifar10 - INFO - 
+Epoch 10/10
+2024-11-16 03:39:55 - __main__.train_with_cifar10 - INFO - Train Loss: 1.1016, Train Acc: 60.60%
+Val Loss: 1.2427, Val Acc: 56.10%
+2024-11-16 03:39:55 - __main__.train_with_cifar10 - INFO - 
+=== Training Complete ===
+2024-11-16 03:39:55 - __main__.train_with_cifar10 - INFO - Best validation loss: 1.2364
+2024-11-16 03:39:55 - __main__.train_with_cifar10 - INFO - Final validation accuracy: 56.10%
+2024-11-16 03:39:55 - __main__.train_with_cifar10 - INFO - Training time: 193.04 seconds

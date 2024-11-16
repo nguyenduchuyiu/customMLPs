@@ -1,0 +1,12 @@
+{
+    "training_time": 193.04430103302002,
+    "final_metrics": {
+        "train_loss": 1.1016486791931852,
+        "train_accuracy": 0.60598,
+        "val_loss": 1.2427474498748778,
+        "val_accuracy": 0.561
+    },
+    "best_validation_loss": 1.2364478796720504,
+    "total_epochs": 10,
+    "early_stopped": false
+}

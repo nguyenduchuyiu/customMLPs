@@ -1,0 +1,60 @@
+2024-11-16 03:42:18 - __main__.train_with_1_layer - INFO - Logging setup complete. Logs will be saved to: logs/train_with_1_layer/training_20241116_034218.log
+2024-11-16 03:42:18 - __main__.train_with_1_layer - INFO - === Training Configuration ===
+2024-11-16 03:42:18 - __main__.train_with_1_layer - INFO - Experiment Name: train_with_1_layer
+2024-11-16 03:42:18 - __main__.train_with_1_layer - INFO - Model Architecture:
+CustomMLP(
+  (flatten): Flatten(start_dim=1, end_dim=-1)
+  (layers): Sequential(
+    (0): Linear(in_features=3072, out_features=1024, bias=True)
+    (1): ReLU()
+    (2): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (3): Dropout(p=0.3, inplace=False)
+    (4): Linear(in_features=1024, out_features=10, bias=True)
+  )
+)
+2024-11-16 03:42:18 - __main__.train_with_1_layer - INFO - Optimizer: Adam
+2024-11-16 03:42:18 - __main__.train_with_1_layer - INFO - Learning Rate: 0.001
+2024-11-16 03:42:18 - __main__.train_with_1_layer - INFO - Batch Size: 256
+2024-11-16 03:42:18 - __main__.train_with_1_layer - INFO - Epochs: 10
+2024-11-16 03:42:18 - __main__.train_with_1_layer - INFO - Device: cuda
+2024-11-16 03:42:19 - __main__.train_with_1_layer - INFO - 
+Epoch 1/10
+2024-11-16 03:42:37 - __main__.train_with_1_layer - INFO - Train Loss: 1.7283, Train Acc: 39.69%
+Val Loss: 1.5381, Val Acc: 45.61%
+2024-11-16 03:42:37 - __main__.train_with_1_layer - INFO - 
+Epoch 2/10
+2024-11-16 03:43:14 - __main__.train_with_1_layer - INFO - Train Loss: 1.4308, Train Acc: 49.88%
+Val Loss: 1.4081, Val Acc: 50.87%
+2024-11-16 03:43:14 - __main__.train_with_1_layer - INFO - 
+Epoch 4/10
+2024-11-16 03:43:33 - __main__.train_with_1_layer - INFO - Train Loss: 1.3687, Train Acc: 51.90%
+Val Loss: 1.3728, Val Acc: 51.26%
+2024-11-16 03:43:33 - __main__.train_with_1_layer - INFO - 
+Epoch 5/10
+2024-11-16 03:43:50 - __main__.train_with_1_layer - INFO - Train Loss: 1.3263, Train Acc: 53.61%
+Val Loss: 1.3691, Val Acc: 52.08%
+2024-11-16 03:43:50 - __main__.train_with_1_layer - INFO - 
+Epoch 6/10
+2024-11-16 03:44:12 - __main__.train_with_1_layer - INFO - Train Loss: 1.2961, Train Acc: 54.69%
+Val Loss: 1.3452, Val Acc: 52.78%
+2024-11-16 03:44:12 - __main__.train_with_1_layer - INFO - 
+Epoch 7/10
+2024-11-16 03:44:33 - __main__.train_with_1_layer - INFO - Train Loss: 1.2554, Train Acc: 56.00%
+Val Loss: 1.3711, Val Acc: 52.60%
+2024-11-16 03:44:33 - __main__.train_with_1_layer - INFO - 
+Epoch 8/10
+2024-11-16 03:44:52 - __main__.train_with_1_layer - INFO - Train Loss: 1.2317, Train Acc: 57.01%
+Val Loss: 1.3323, Val Acc: 54.11%
+2024-11-16 03:44:52 - __main__.train_with_1_layer - INFO - 
+Epoch 9/10
+2024-11-16 03:45:14 - __main__.train_with_1_layer - INFO - Train Loss: 1.2003, Train Acc: 57.96%
+Val Loss: 1.3191, Val Acc: 53.94%
+2024-11-16 03:45:14 - __main__.train_with_1_layer - INFO - 
+Epoch 10/10
+2024-11-16 03:45:33 - __main__.train_with_1_layer - INFO - Train Loss: 1.1701, Train Acc: 59.11%
+Val Loss: 1.3089, Val Acc: 54.00%
+2024-11-16 03:45:33 - __main__.train_with_1_layer - INFO - 
+=== Training Complete ===
+2024-11-16 03:45:33 - __main__.train_with_1_layer - INFO - Best validation loss: 1.3089
+2024-11-16 03:45:33 - __main__.train_with_1_layer - INFO - Final validation accuracy: 54.00%
+2024-11-16 03:45:33 - __main__.train_with_1_layer - INFO - Training time: 193.32 seconds

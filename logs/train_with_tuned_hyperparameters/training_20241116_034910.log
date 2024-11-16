@@ -1,0 +1,72 @@
+2024-11-16 03:49:10 - __main__.train_with_tuned_hyperparameters - INFO - Logging setup complete. Logs will be saved to: logs/train_with_tuned_hyperparameters/training_20241116_034910.log
+2024-11-16 03:49:10 - __main__.train_with_tuned_hyperparameters - INFO - === Training Configuration ===
+2024-11-16 03:49:10 - __main__.train_with_tuned_hyperparameters - INFO - Experiment Name: train_with_tuned_hyperparameters
+2024-11-16 03:49:10 - __main__.train_with_tuned_hyperparameters - INFO - Model Architecture:
+CustomMLP(
+  (flatten): Flatten(start_dim=1, end_dim=-1)
+  (layers): Sequential(
+    (0): Linear(in_features=3072, out_features=1024, bias=True)
+    (1): ReLU()
+    (2): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (3): Dropout(p=0.1, inplace=False)
+    (4): Linear(in_features=1024, out_features=512, bias=True)
+    (5): ReLU()
+    (6): BatchNorm1d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (7): Dropout(p=0.1, inplace=False)
+    (8): Linear(in_features=512, out_features=256, bias=True)
+    (9): ReLU()
+    (10): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (11): Dropout(p=0.1, inplace=False)
+    (12): Linear(in_features=256, out_features=10, bias=True)
+  )
+)
+2024-11-16 03:49:10 - __main__.train_with_tuned_hyperparameters - INFO - Optimizer: Adam
+2024-11-16 03:49:10 - __main__.train_with_tuned_hyperparameters - INFO - Learning Rate: 0.005
+2024-11-16 03:49:10 - __main__.train_with_tuned_hyperparameters - INFO - Batch Size: 128
+2024-11-16 03:49:10 - __main__.train_with_tuned_hyperparameters - INFO - Epochs: 10
+2024-11-16 03:49:10 - __main__.train_with_tuned_hyperparameters - INFO - Device: cuda
+2024-11-16 03:49:11 - __main__.train_with_tuned_hyperparameters - INFO - 
+Epoch 1/10
+2024-11-16 03:49:35 - __main__.train_with_tuned_hyperparameters - INFO - Train Loss: 1.7038, Train Acc: 39.13%
+Val Loss: 1.5470, Val Acc: 44.76%
+2024-11-16 03:49:35 - __main__.train_with_tuned_hyperparameters - INFO - 
+Epoch 2/10
+2024-11-16 03:49:57 - __main__.train_with_tuned_hyperparameters - INFO - Train Loss: 1.4732, Train Acc: 47.02%
+Val Loss: 1.4012, Val Acc: 49.69%
+2024-11-16 03:49:57 - __main__.train_with_tuned_hyperparameters - INFO - 
+Epoch 3/10
+2024-11-16 03:50:19 - __main__.train_with_tuned_hyperparameters - INFO - Train Loss: 1.3776, Train Acc: 50.63%
+Val Loss: 1.3631, Val Acc: 50.88%
+2024-11-16 03:50:19 - __main__.train_with_tuned_hyperparameters - INFO - 
+Epoch 4/10
+2024-11-16 03:50:44 - __main__.train_with_tuned_hyperparameters - INFO - Train Loss: 1.3121, Train Acc: 53.15%
+Val Loss: 1.3375, Val Acc: 52.32%
+2024-11-16 03:50:44 - __main__.train_with_tuned_hyperparameters - INFO - 
+Epoch 5/10
+2024-11-16 03:51:05 - __main__.train_with_tuned_hyperparameters - INFO - Train Loss: 1.2645, Train Acc: 54.97%
+Val Loss: 1.3053, Val Acc: 53.56%
+2024-11-16 03:51:05 - __main__.train_with_tuned_hyperparameters - INFO - 
+Epoch 6/10
+2024-11-16 03:51:29 - __main__.train_with_tuned_hyperparameters - INFO - Train Loss: 1.2279, Train Acc: 56.14%
+Val Loss: 1.3157, Val Acc: 52.66%
+2024-11-16 03:51:29 - __main__.train_with_tuned_hyperparameters - INFO - 
+Epoch 7/10
+2024-11-16 03:51:51 - __main__.train_with_tuned_hyperparameters - INFO - Train Loss: 1.1963, Train Acc: 57.41%
+Val Loss: 1.3014, Val Acc: 53.54%
+2024-11-16 03:51:51 - __main__.train_with_tuned_hyperparameters - INFO - 
+Epoch 8/10
+2024-11-16 03:52:13 - __main__.train_with_tuned_hyperparameters - INFO - Train Loss: 1.1818, Train Acc: 57.79%
+Val Loss: 1.3222, Val Acc: 53.48%
+2024-11-16 03:52:13 - __main__.train_with_tuned_hyperparameters - INFO - 
+Epoch 9/10
+2024-11-16 03:52:36 - __main__.train_with_tuned_hyperparameters - INFO - Train Loss: 1.1489, Train Acc: 59.06%
+Val Loss: 1.2755, Val Acc: 54.37%
+2024-11-16 03:52:36 - __main__.train_with_tuned_hyperparameters - INFO - 
+Epoch 10/10
+2024-11-16 03:52:58 - __main__.train_with_tuned_hyperparameters - INFO - Train Loss: 1.1347, Train Acc: 59.44%
+Val Loss: 1.2891, Val Acc: 53.76%
+2024-11-16 03:52:58 - __main__.train_with_tuned_hyperparameters - INFO - 
+=== Training Complete ===
+2024-11-16 03:52:58 - __main__.train_with_tuned_hyperparameters - INFO - Best validation loss: 1.2755
+2024-11-16 03:52:58 - __main__.train_with_tuned_hyperparameters - INFO - Final validation accuracy: 53.76%
+2024-11-16 03:52:58 - __main__.train_with_tuned_hyperparameters - INFO - Training time: 226.48 seconds

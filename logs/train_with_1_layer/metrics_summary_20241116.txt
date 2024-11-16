@@ -1,0 +1,9 @@
+=== Training Metrics Summary ===
+
+final_train_loss: 1.1701
+final_val_loss: 1.3089
+final_train_acc: 59.1060
+final_val_acc: 54.0000
+best_val_loss: 1.3089
+best_val_acc: 54.1100
+total_epochs: 10.0000
